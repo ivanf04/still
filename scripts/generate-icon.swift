@@ -15,7 +15,7 @@ enum IconError: Error {
 func color(_ hex: UInt32, alpha: CGFloat = 1) -> NSColor {
     NSColor(srgbRed: CGFloat((hex >> 16) & 255) / 255,
             green: CGFloat((hex >> 8) & 255) / 255,
-            blue: CGFloat(hex & 255) / 255,
+            blue: CGFloat(hex & 230) / 230,
             alpha: alpha)
 }
 
